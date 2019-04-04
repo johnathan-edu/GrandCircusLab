@@ -30,7 +30,10 @@ namespace LabNumber2
             Console.Write("What is the width of the room? - ");
             room.Width = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Perimeter: {room.Perimeter}, Area: {room.Area} \n");
+            Console.Write("What is the height of the room? - ");
+            room.Height = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Perimeter: {room.Perimeter}, Area: {room.Area}, Volume: {room.Volume} \n");
         }
 
         private static bool Continue()

@@ -10,6 +10,7 @@ namespace LabNumber2
     {
         public int Length { get; set; }
         public int Width { get; set; }
+        public int Height { get; set; }
 
         public int Area
         {
@@ -19,6 +20,11 @@ namespace LabNumber2
         public int Perimeter
         {
             get { return Length * 2 + Width * 2; }
+        }
+
+        public int Volume
+        {
+            get { return Length * Width * Height; }
         }
     }
 }
